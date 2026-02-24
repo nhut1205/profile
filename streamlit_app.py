@@ -132,7 +132,7 @@ def render_projects():
             - **Database:** Relational SQL structure
             """)
         with col2:
-            st.link_button("View on GitHub", "https://github.com/yourlink", key="btn_movie")
+            st.link_button("View on GitHub", "https://github.com/yourlink")
     
     st.divider()
     
@@ -147,7 +147,7 @@ def render_projects():
             - **Tech Stack:** Python, OpenCV, Scikit-learn, Streamlit.
             """)
         with col2:
-            st.link_button("View on GitHub", "https://github.com/nhut1205/CryBean.git", key="btn_crybean")
+            st.link_button("View on GitHub", "https://github.com/nhut1205/CryBean.git")
 
 def render_crybean_demo():
     st.markdown("### 🌱 Live Demo: CryBean Vision")
