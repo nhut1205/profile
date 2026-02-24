@@ -90,20 +90,21 @@ def render_about():
     with col1:
         st.markdown("### 👋 Hello, I'm Pham Minh Nhut")
         st.markdown("""
-        **Software Engineer | System Builder**
+        **Data Analyst | Tech Enthusiast**
         
-        I am an IT Engineer focused on building maintainable backend systems 
-        and clean Web API architectures. 
+        I am an IT Engineer with a deep passion for data and technology. 
+        I focus on transforming raw data into actionable insights and building 
+        efficient data workflows to solve real business problems.
         
         **Core Values:**
-        * 📐 **Structure:** Clear structure over complexity
-        * 🛠️ **Maintainability:** Sustainable code over quick hacks
-        * ⚡ **Performance:** Optimized where it truly matters
+        * 📊 **Insight:** Meaningful business value over raw numbers
+        * 🛠️ **Accuracy:** Data integrity and structured analysis over assumptions
+        * ⚡ **Efficiency:** Automated and optimized data processes
         
-        *Currently exploring deeper system design and scalable backend patterns.*
+        *Currently exploring advanced data analytics, predictive modeling, and data storytelling.*
         """)
     with col2:
-        st.image("https://api.dicebear.com/7.x/avataaars/svg?seed=Nhut", caption="Software Engineer")
+        st.image("avatar.jpg.png", caption="Software Engineer")
 
 def render_philosophy():
     st.markdown("### 🧠 Engineering Philosophy")
@@ -121,18 +122,35 @@ def render_philosophy():
 def render_projects():
     st.markdown("### 🚀 Selected Projects")
     
+    # Project 1: Shifting focus from Web App to Database & API
     with st.container():
         col1, col2 = st.columns([3, 1])
         with col1:
-            st.markdown("#### 🎬 Movie Web Application")
+            st.markdown("#### 🎬 Movie Database & Data API")
             st.markdown("""
-            A scalable backend system for a movie database, focusing on clean separation of concerns.
-            - **Backend:** ASP.NET RESTful API
-            - **Security:** JWT Authentication & Role-based access
-            - **Database:** Relational SQL structure
+            Designed a relational database architecture and built API pipelines to manage and retrieve large-scale movie data.
+            - **Data Modeling:** Designed and normalized database structures (Relational SQL) for complex, real-world datasets.
+            - **Data Integration & API:** Built a RESTful API (ASP.NET) with optimized queries for high-speed data delivery to clients.
+            - **Data Security:** Implemented JWT Authentication and Role-Based Access Control (RBAC) to secure data sources.
             """)
         with col2:
             st.link_button("View on GitHub", "https://github.com/yourlink")
+            
+    st.divider()
+    
+    # Project 2: CryBean - Emphasizing Data Extraction & Analytics
+    with st.container():
+        col1, col2 = st.columns([3, 1])
+        with col1:
+            st.markdown("#### 🌱 CryBean: Quality Analytics & Predictive Modeling")
+            st.markdown("""
+            A geometric data analysis and Machine Learning system to automate the quality assessment process of agricultural products.
+            - **Data Extraction:** Applied Computer Vision (OpenCV) to automatically extract and quantify 16 variables (features) from raw images.
+            - **Predictive Analysis:** Trained, evaluated, and fine-tuned classification models (Random Forest, SVM, Neural Network) to identify the most optimal algorithm.
+            - **Tech Stack:** Python, Pandas, Scikit-learn, OpenCV, Streamlit.
+            """)
+        with col2:
+            st.link_button("View on GitHub", "https://github.com/nhut1205/CryBean.git")
     
     st.divider()
     
