@@ -2,4 +2,8 @@ streamlit
 opencv-python-headless
 numpy
 joblib
+<<<<<<< HEAD
 scikit-learn
+=======
+scikit-learn
+>>>>>>> eb2aca35b6536068525c2718eb6048b5e129a52f
